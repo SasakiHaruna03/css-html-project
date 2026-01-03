@@ -1,22 +1,23 @@
 
 // 1. Foundation
 @use "foundation/reset";
-@use "foundation/variable";
 @use "foundation/base";
 
 // 2. Layout
-@use "layout/header";
-@use "layout/footer";
-@use "layout/main";
+@use "layout/l-container";
+@use "layout/l-header";
+@use "layout/l-footer";
+@use "layout/l-main";
 
 // 3. Object (Component)
-@use "object/component/button";
-@use "object/component/card";
+@use "object/component/c-button";
+@use "object/component/c-label";
 
 // 4. Object (Project)
-@use "object/project/article";
-@use "object/project/hero";
+@use "object/project/p-card";
+@use "object/project/p-first-view";
 
 // 5. Object (Utility)
-@use "object/utility/margin";
-@use "object/utility/text";
+@use "object/utility/u-margin";
+@use "object/utility/u-text";
+
