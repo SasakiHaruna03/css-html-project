@@ -1,0 +1,66 @@
+h1 {
+    color: var(--Text-Headline, #171615);
+    text-align: center;
+
+    /* Heading 1 */
+    font-family: Outfit;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 55px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--Text-Headline, #171615);
+    text-align: center;
+
+    /* Heading 2 */
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 44px */
+    letter-spacing: -1px;
+}
+
+.caption1 {
+    color: var(--Text-Caption, #575757);
+    text-align: center;
+
+    /* Caption 1 */
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    color: var(--Text-Body-1, #2C2825);
+    text-align: center;
+
+    /* Paragraph 1 */
+    font-family: Outfit;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: -0.425px;
+}
+
+.florist-body {
+    color: var(--Text-Body-1, #2C2825);
+    text-align: center;
+
+    /* Florist/Body */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.4px;
+}
