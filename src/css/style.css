@@ -229,6 +229,81 @@ img {
   margin-right: 0;
 }
 
+/* 画像共通 */
+img {
+  max-width: 100%;
+}
+
+/* タイトル */
+.title__about {
+  text-align: left;
+  margin-top: 44px;
+  margin-bottom: 80px;
+}
+
+/* 内容 */
+.our-story {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  text-align: left;
+  padding-bottom: 100px;
+}
+
+.about__owner {
+  display: flex;
+}
+
+.owner__text {
+  margin-left: 20px;
+}
+
+.story__title {
+  margin: 70px 0;
+}
+
+.story__img {
+  display: flex;
+  gap: 20px;
+}
+
+.story__text {
+  margin: 70px 0;
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: left;
+  max-width: 600px;
+  align-self: stretch;
+  height: 408px;
+  box-sizing: border-box;
+}
+
+.announce__text {
+  margin: 70px 0;
+  display: block;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: left;
+  max-width: 600px;
+  align-self: stretch;
+  height: 238px;
+  box-sizing: border-box;
+}
+
+.announce > .button {
+  margin-bottom: 80px;
+  color: #2C2825;
+}
+
+/* ボタン共通 */
+.button {
+  display: inline-flex;
+  padding: 8px 12px 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .button {
   background-color: var(--Accent-Accent-5, #FFC800);
   border: none;
@@ -246,7 +321,15 @@ nav a {
   color: black;
 }
 
-header p {
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: lightgrey;
+}
+
+header > .title__logo {
   color: var(--Link-Link, #2C2825);
   /* Display */
   font-family: "Caprasimo", sans-serif;
@@ -259,7 +342,6 @@ header p {
 
 h1 {
   color: var(--Text-Headline, #171615);
-  text-align: center;
   /* Heading 1 */
   font-family: Outfit;
   font-size: 50px;
@@ -272,7 +354,6 @@ h1 {
 
 h2 {
   color: var(--Text-Headline, #171615);
-  text-align: center;
   /* Heading 2 */
   font-family: Outfit;
   font-size: 40px;
@@ -284,7 +365,6 @@ h2 {
 
 .h4 {
   color: var(--Text-Body-2, rgba(0, 0, 0, 0.6));
-  text-align: center;
   /* Heading 4 */
   font-family: Outfit;
   font-size: 15px;
@@ -296,7 +376,6 @@ h2 {
 
 .caption1 {
   color: var(--Text-Caption, #575757);
-  text-align: center;
   /* Caption 1 */
   font-family: Outfit;
   font-size: 14px;
@@ -309,7 +388,6 @@ h2 {
 
 .caption2 {
   color: var(--Text-Body-1, #2C2825);
-  text-align: center;
   /* Caption 2 */
   font-family: Outfit;
   font-size: 18px;
@@ -319,7 +397,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.paragraph {
+.paragraph1 {
   color: var(--Text-Body-1, #2C2825);
   text-align: center;
   /* Paragraph 1 */
@@ -329,6 +407,17 @@ h2 {
   font-weight: 400;
   line-height: 140%; /* 23.8px */
   letter-spacing: -0.425px;
+}
+
+.paragraph2 {
+  color: var(--Text-Body-1, #2C2825);
+  /* Paragraph 2 */
+  font-famsily: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: -0.24px;
 }
 
 .florist-body {

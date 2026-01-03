@@ -1,4 +1,4 @@
-header p {
+header > .title__logo {
     color: var(--Link-Link, #2C2825);
 
     /* Display */
@@ -12,7 +12,6 @@ header p {
 
 h1 {
     color: var(--Text-Headline, #171615);
-    text-align: center;
 
     /* Heading 1 */
     font-family: Outfit;
@@ -26,7 +25,6 @@ h1 {
 
 h2 {
     color: var(--Text-Headline, #171615);
-    text-align: center;
 
     /* Heading 2 */
     font-family: Outfit;
@@ -39,7 +37,6 @@ h2 {
 
 .h4 {
     color: var(--Text-Body-2, rgba(0, 0, 0, 0.60));
-    text-align: center;
 
     /* Heading 4 */
     font-family: Outfit;
@@ -52,7 +49,6 @@ h2 {
 
 .caption1 {
     color: var(--Text-Caption, #575757);
-    text-align: center;
 
     /* Caption 1 */
     font-family: Outfit;
@@ -64,9 +60,9 @@ h2 {
     text-transform: uppercase;
 }
 
+
 .caption2 {
     color: var(--Text-Body-1, #2C2825);
-    text-align: center;
 
     /* Caption 2 */
     font-family: Outfit;
@@ -77,7 +73,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.paragraph {
+.paragraph1 {
     color: var(--Text-Body-1, #2C2825);
     text-align: center;
 
@@ -88,6 +84,18 @@ h2 {
     font-weight: 400;
     line-height: 140%; /* 23.8px */
     letter-spacing: -0.425px;
+}
+
+.paragraph2 {
+    color: var(--Text-Body-1, #2C2825);
+
+    /* Paragraph 2 */
+    font-famsily: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: -0.24px;
 }
 
 .florist-body {
