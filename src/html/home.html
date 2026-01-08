@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Our Bloom</title>
         <link rel="stylesheet" href="../css/style.css">
 
@@ -14,9 +15,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <p class="title__logo">Our Blooms®️</p>
-            <nav>
+        <header class="l-header">
+            <div class="title__logo">
+                <span class="u-hidden-sm">Our Blooms®️</span>
+                <span class="u-show-sm">O.B.</span>
+            </div>
+                <button class="p-hamburger js-hamburger" aria-label="メニューを開く">
+                    <img src="../media/images/common/hamburger-Icons-close.svg">
+                </button>
+            <nav class="nav__list js-nav">
                 <ul>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,19 +33,25 @@
         </header>
         <hr>
         <main>
-            <img class="logo" src="../media/images/Logo Image.png">
-            <img class="logo__image" src="../media/images/Image0.png">
+            <div class="logo__item">
+                <img class="logo" src="../media/images/home/Logo Image.png">
+                <picture>
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="../media/images/home/Thumbnail02.png">
+                    <source media="(max-width: 767px)" srcset="../media/images/home/Thumbnail03.png">
+                    <img class="logo__image" src="../media/images/home/Image0.png">
+                </picture>
+            </div>
             <section class="content__top">
                 <p class="content__catch caption1">WHO WE ARE</p>
                 <h2 class="content__desc">We're Our Blooms® and we're here to help<br> you find your floral story.</h2>
                 <a href="about.html" class="button">・ABOUT US</a>
             </section>
             <p class="images">
-                <img src="../media/images/Image 001.png">
-                <img src="../media/images/Image 02.png">
-                <img src="../media/images/Image 03.png">
-                <img src="../media/images/Image 04.png">
-                <img src="../media/images/Image 05.png">
+                <img src="../media/images/home/Image 001.png">
+                <img src="../media/images/home/Image 02.png">
+                <img src="../media/images/home/Image 03.png">
+                <img src="../media/images/home/Image 04.png">
+                <img src="../media/images/home/Image 05.png">
             </p>
             <section>
                 <div class="section__title">
@@ -49,7 +62,7 @@
                 <div class="article">
                     <div class="article__item">
                         <h1>1</h1>
-                        <img src="../media/images/Image1.png">
+                        <img src="../media/images/home/Image1.png">
                         <div class="article__text-group">
                             <h1 class="article__title">FLORAL INSTALLATIONS</h1>
                             <p class="article__text florist-body">Living art for homes, businesses, and events.</p>
@@ -58,32 +71,32 @@
                     <hr>
                     <div class="article__item">
                         <h1>2</h1>
-                        <img src="../media/images/Image2.png">
+                        <img src="../media/images/home/Image2.png">
                         <div class="article__text-group">
                             <h1 class="article__title">NATIVE PLANT ARRANGEMENTS</h1>
-                            <p class="article__text florist-body">Whether it’s a private retreat or a public space, we craft floral experiences that<br> bloom beyond expectations.</p>
+                            <p class="article__text florist-body">Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations.</p>
                         </div>
                     </div>
                     <hr>
                     <div class="article__item">
                         <h1>3</h1>
-                        <img src="../media/images/Image3.png">
+                        <img src="../media/images/home/Image3.png">
                         <div class="article__text-group">
                             <h1 class="article__title">CUSTOM FLORAL CONCEPTS</h1>
-                            <p class="article__text florist-body">Your vision, our blooms. We build arrangements that are both personal and<br> exquisitely simple. Whether it’s a private retreat or a public space, we craft floral<br> experiences that bloom beyond expectations.</p>
+                            <p class="article__text florist-body">Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral<br> experiences that bloom beyond expectations.</p>
                         </div>
                     </div>
                     <hr>
                 </div>
             </section>
-            <img class="catch-img" src="../media/images/Image4.png">
+            <img class="catch-img" src="../media/images/home/Image4.png">
             <section class="content__bottom">
                 <p class="content__catch caption1">WORK WITH US</p>
                 <h2 class="content__desc">Discover how we can add a touch of natural beauty to your next event.</h2>
                 <a href="about.html" class="button">・ABOUT US</a>
             </section>
             <footer>
-                <img class="footer-img" src="../media/images/Image-footer.png">
+                <img class="footer-img" src="../media/images/common/Image-footer.png">
             </footer>
         </main>
     </body>
