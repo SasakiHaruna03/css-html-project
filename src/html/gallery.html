@@ -17,8 +17,8 @@
     <body>
         <header class="l-header">
             <div class="title__logo">
-                <span class="u-hidden-sm">Our Blooms®️</span>
-                <span class="u-show-sm">O.B.</span>
+                <a href="home.html" class="u-hidden-sm">Our Blooms®️</a>
+                <a href="home.html" class="u-show-sm">O.B.</a>
             </div>
                 <button class="p-hamburger js-hamburger" aria-label="メニューを開く">
                     <img src="../media/images/common/hamburger-Icons-close.svg">
@@ -119,7 +119,11 @@
                 <a href="about.html" class="button">・ABOUT US</a>
             </section>
             <footer>
-                <img class="footer-img" src="../media/images/Image-footer.png">
+                <picture>
+                    <source media="(min-width: 768px) and (max-width: 1024px)" srcset="../media/images/common/Image-footer-2.png">
+                    <source media="(max-width: 767px)" srcset="../media/images/common/Image-footer-3.png">
+                    <img class="footer-img" src="../media/images/common/Image-footer-1.png">
+                </picture>
             </footer>
         </main>
     </body>
