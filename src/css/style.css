@@ -27,6 +27,11 @@ html {
   margin: 0 40px;
 }
 
+.picture {
+  margin: 0 auto;
+  width: fit-content;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -189,8 +194,6 @@ img {
 }
 
 .flower__list {
-  display: grid;
-  grid-template-columns: 180px 1fr;
   gap: 10px;
   margin-bottom: 100px;
 }
@@ -202,25 +205,67 @@ img {
 
 .list__item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 60px 20px;
 }
 
-/* サービス共通 */
-.content__services {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  margin-top: 100px;
+.flower__img {
+  width: 100%;
+  display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .flower__list {
+    gap: 10px;
+    margin-bottom: 100px;
+  }
+  .flower__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 20px;
+  }
+  .flower__item--last {
+    grid-column: 1/3;
+  }
+  .content__title.caption1 {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .flower__list {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 10px;
+    margin-bottom: 100px;
+  }
+  .flower__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px 20px;
+  }
+  .flower__item--last {
+    grid-column: 3/3;
+  }
+}
+/* サービス共通 */
 .services__list {
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100%;
 }
 
 .services__item {
   display: flex;
+  flex-direction: column;
   padding: 30px 0;
   gap: 40px;
 }
@@ -229,14 +274,76 @@ img {
   text-align: left;
 }
 
-.services__img {
-  margin-left: 20px;
-  margin-right: 0;
+.services__text {
+  flex: 1;
+  min-width: none;
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  max-width: 100%;
+  word-break: break-word;
 }
 
+.services__img {
+  margin-left: 20px;
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.services__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content__services {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 100px;
+}
+
+.content__title.caption1 {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .content__services {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+  .content__title.caption1 {
+    margin-bottom: 40px;
+  }
+  .services__item {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content__services {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    margin-top: 100px;
+  }
+  .services__item {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /* 画像共通 */
 img {
   max-width: 100%;
+}
+
+/* ボタン共通 */
+.button {
+  display: inline-flex;
+  padding: 8px 12px 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
 }
 
 /* タイトル */
@@ -249,17 +356,23 @@ img {
 /* 内容 */
 .our-story {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 1fr;
   text-align: left;
   padding-bottom: 100px;
 }
 
+.about__title {
+  margin-bottom: 50px;
+}
+
 .about__owner {
   display: flex;
+  flex-direction: column;
 }
 
 .owner__text {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .story__title {
@@ -268,7 +381,14 @@ img {
 
 .story__img {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+
+.story__img img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .story__text {
@@ -300,16 +420,47 @@ img {
   color: #2C2825;
 }
 
-/* ボタン共通 */
-.button {
-  display: inline-flex;
-  padding: 8px 12px 6px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap;
+@media screen and (min-width: 768px) {
+  .our-story {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  .about__owner {
+    display: flex;
+    flex-direction: row;
+  }
+  .story__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .story__img img {
+    flex: 1;
+    min-width: 0;
+    object-fit: cover;
+  }
 }
-
+@media screen and (min-width: 1024px) {
+  .our-story {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+  }
+  .about__owner {
+    display: flex;
+    flex-direction: row;
+  }
+  .story__img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .story__img img {
+    flex: 1;
+    min-width: 0;
+    object-fit: cover;
+  }
+}
 .button {
   background-color: var(--Accent-Accent-5, #FFC800);
   border: none;

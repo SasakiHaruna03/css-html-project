@@ -3,6 +3,17 @@ img {
     max-width: 100%;
 }
 
+/* ボタン共通 */
+.button {
+    display: inline-flex;
+    padding: 8px 12px 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+
 /* タイトル */
 .title__about {
     text-align: left;
@@ -13,17 +24,23 @@ img {
 /* 内容 */
 .our-story {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 1fr;
     text-align: left;
     padding-bottom: 100px;
 }
 
+.about__title {
+    margin-bottom: 50px;
+}
+
 .about__owner {
     display: flex;
+    flex-direction: column;
 }
 
 .owner__text {
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .story__title {
@@ -32,7 +49,14 @@ img {
 
 .story__img {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+.story__img img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .story__text {
@@ -64,12 +88,52 @@ img {
     color: #2C2825;
 }
 
-/* ボタン共通 */
-.button {
-    display: inline-flex;
-    padding: 8px 12px 6px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    white-space: nowrap;
+@media screen and (min-width: 768px) {
+    .our-story {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .about__owner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .story__img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .story__img img {
+        flex: 1;
+        min-width: 0;
+        object-fit: cover;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .our-story {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    }
+
+    .about__owner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .story__img {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .story__img img {
+        flex: 1;
+        min-width: 0;
+        object-fit: cover;
+    }
+}
+
+
