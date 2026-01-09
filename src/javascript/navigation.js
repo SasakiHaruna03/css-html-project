@@ -1,22 +1,18 @@
-// 1. 要素を取得する
 const hamburger = document.querySelector('.js-hamburger');
 const nav = document.querySelector('.js-nav');
+const icon = hamburger.querySelector('img');
 
-// 2. イベントリスナーを登録する
-if (hamburger && nav) { // 要素が存在する場合のみ実行するガード（推奨）
-    hamburger.addEventListener('click', function() {
-        // ボタンとナビの両方に 'is-open' を付け外しする
-        hamburger.classList.toggle('is-open');
-        nav.classList.toggle('is-open');
-    });
-}
+// アイコンのパスを保存
+const hamburgerIcon = "../media/images/common/hamburger-Icons-close.svg"; // 3本線
+const closeIcon = "../media/images/common/hamburger-Icons-open.svg"; // バツ印
 
-// メニュー内のリンクをクリックした時も閉じるようにする
-const navLinks = document.querySelectorAll('.p-global-nav__link');
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('is-active');
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('is-open');
-        nav.classList.remove('is-open');
-    });
+    // アイコンの切り替え
+    if (nav.classList.contains('is-active')) {
+        icon.src = closeIcon;
+    } else {
+        icon.src = hamburgerIcon;
+    }
 });

@@ -16,14 +16,14 @@ header a:hover {
     background-color: lightgrey;
 }
 
-// スマホで隠す
+// PC用ロゴタイトル
 .u-hidden-sm {
     @media screen and (max-width: 767px) {
     display: none !important;
     }
 }
 
-// スマホの時だけ表示する
+// スマホ用ロゴタイトル
 .u-show-sm {
     display: none;
     @media screen and (max-width: 767px) {
@@ -31,76 +31,68 @@ header a:hover {
     }
 }
 
+/* ハンバーガーボタンはPCでは隠す */
 .p-hamburger {
-    // 基本のスタイル（3本線）
-    width: 44px;
-    height: 44px;
-    border: none;
-    display: block;
-    background-color: transparent;
-    background-image: url("../../../media/images/common/hamburger-Icons-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-
-    // メニューが開いた状態
-    &.is-open {
-        background-image: url("../../../media/images/common/hamburger-Icons-open.svg");
-    }
-
-    // PCではボタンごと隠す
-    display: block;
-    @media screen and (min-width: 768px) {
     display: none;
-    }
 }
 
-.nav__list {
-    // --- スマホ時のスタイル（767px以下） ---
-    position: fixed;
-    top: 0;
-    right: -100%; // 画面の右外に隠す
-    width: 100%;  // 画面いっぱい
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.95);
-    transition: right 0.3s; // スライドする動き
-    z-index: 100;
+/* ナビゲーションを横並びにする */
+.nav__list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
 
-    // JSで 'is-open' クラスがついた時だけ表示
-    &.is-open {
-        right: 0;
+.nav__list ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .title__logo {
+        position: relative; // z-indexを有効にするため
+        z-index: 110;       /* メニュー背景(100)より手前に出す */
+    }
+    /* ハンバーガーボタンを表示する */
+    .p-hamburger {
+        display: block;
+        position: relative;
+        z-index: 110;
+        background-color: #fff;
+        border: none;
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column; // 縦に並べる
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+    /* ナビゲーションを画面全体を覆うメニューに作り変える */
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        padding: 20px 16px;
+        z-index: 100;
+
+        /* 初期状態は隠しておく */
+        display: none;
     }
 
-    &__item {
-        margin: 20px 0; // 縦の隙間を空ける
+    /* JSで .is-active がついた時だけ表示 */
+    .nav__list.is-active {
+        display: block;
     }
 
-    // --- PC時のスタイル（768px以上） ---
-    @media screen and (min-width: 768px) {
-    /* スマホ用の固定配置をリセット */
-    position: static;
-    width: auto;
-    height: auto; // 高さを自動（中身に合わせる）に戻す
-    overflow: visible;
-    background-color: transparent;
-
-    ul {
-      padding: 0; // 81pxの余白を消す
-      flex-direction: row; // 横並びにする
-      gap: 20px; // PC用の項目間の隙間
+    /* メニュー項目を縦並びにする */
+    .nav__list ul {
+        flex-direction: column;
+        margin-top: 81px;
+        gap: 0;
+        text-align: left;
     }
 
-    li a {
-      font-size: 14px; // PC用のサイズに調整
-    }
+    .nav__list ul li {
+        margin-bottom: 24px;
     }
 }

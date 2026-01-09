@@ -49,6 +49,11 @@ nav li {
   padding-right: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 16px;
+  }
+}
 /* フッターのデザイン */
 .footer-img {
   padding: 0 40px;
@@ -502,72 +507,66 @@ header a:hover {
   }
 }
 
+/* ハンバーガーボタンはPCでは隠す */
 .p-hamburger {
-  width: 44px;
-  height: 44px;
-  border: none;
-  display: block;
-  background-color: transparent;
-  background-image: url("../../../media/images/common/hamburger-Icons-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  cursor: pointer;
+  display: none;
 }
-.p-hamburger.is-open {
-  background-image: url("../../../media/images/common/hamburger-Icons-open.svg");
+
+/* ナビゲーションを横並びにする */
+.nav__list ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
 }
-.p-hamburger {
-  display: block;
+
+.nav__list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 768px) {
+  .title__logo {
+    position: relative;
+    z-index: 110; /* メニュー背景(100)より手前に出す */
+  }
+  /* ハンバーガーボタンを表示する */
   .p-hamburger {
+    display: block;
+    position: relative;
+    z-index: 110;
+    background-color: #fff;
+    border: none;
+  }
+  /* ナビゲーションを画面全体を覆うメニューに作り変える */
+  .nav__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding: 20px 16px;
+    z-index: 100;
+    /* 初期状態は隠しておく */
     display: none;
   }
-}
-
-.nav__list {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.95);
-  transition: right 0.3s;
-  z-index: 100;
-}
-.nav__list.is-open {
-  right: 0;
-}
-.nav__list__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.nav__list__item {
-  margin: 20px 0;
-}
-@media screen and (min-width: 768px) {
-  .nav__list {
-    /* スマホ用の固定配置をリセット */
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    background-color: transparent;
+  /* JSで .is-active がついた時だけ表示 */
+  .nav__list.is-active {
+    display: block;
   }
+  /* メニュー項目を縦並びにする */
   .nav__list ul {
-    padding: 0;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    margin-top: 81px;
+    gap: 0;
+    text-align: left;
   }
-  .nav__list li a {
-    font-size: 14px;
+  .nav__list ul li {
+    margin-bottom: 24px;
   }
 }
-
 header > .title__logo {
   color: var(--Link-Link, #2C2825);
   /* Display */
