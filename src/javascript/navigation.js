@@ -1,3 +1,4 @@
+
 const hamburger = document.querySelector('.js-hamburger');
 const nav = document.querySelector('.js-nav');
 const icon = hamburger.querySelector('img');
@@ -16,3 +17,4 @@ hamburger.addEventListener('click', () => {
         icon.src = hamburgerIcon;
     }
 });
+
