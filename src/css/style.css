@@ -224,6 +224,9 @@ img {
   align-items: center;
 }
 .modal__view .modal__close {
+  background: none;
+  border: none;
+  outline: none;
   position: absolute;
   top: 20px;
   right: 50px;
