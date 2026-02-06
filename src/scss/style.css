@@ -30,6 +30,7 @@ html {
 
 .picture {
   margin: 0 auto;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -454,7 +455,8 @@ img {
   .story__img img {
     flex: 1;
     min-width: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* PC用にレイアウトを変更 */
@@ -475,7 +477,8 @@ img {
   .story__img img {
     flex: 1;
     min-width: 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .button {
@@ -681,6 +684,4 @@ h2 {
   font-weight: 400;
   line-height: 140%; /* 22.4px */
   letter-spacing: -0.4px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
