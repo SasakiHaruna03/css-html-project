@@ -39,13 +39,11 @@ html {
   width: 100%;
   height: 82px;
   background-color: #ffffff;
-  z-index: 1000;
-  border-bottom: 1px solid #2C2825;
+  border-bottom: 1px solid #595959;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 nav ul {
@@ -209,6 +207,57 @@ img {
 .flower__list {
   gap: 10px;
   margin-bottom: 100px;
+}
+
+.modal__view {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal__view.is-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__view .modal__close {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+.modal__view .modal__btn {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+.modal__view .prev {
+  left: 30px;
+}
+.modal__view .next {
+  right: 30px;
+}
+
+.modal__img {
+  width: 80%;
+  height: auto;
+  max-width: 1200px;
+  max-height: 80vh;
+  object-fit: contain;
 }
 
 .flower__title {

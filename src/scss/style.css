@@ -235,6 +235,23 @@ img {
   font-size: 60px;
   cursor: pointer;
 }
+.modal__view .modal__btn {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+}
+.modal__view .prev {
+  left: 30px;
+}
+.modal__view .next {
+  right: 30px;
+}
 
 .modal__img {
   width: 80%;
