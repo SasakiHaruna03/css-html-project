@@ -28,7 +28,6 @@ img {
     max-width: 100%;
 }
 
-
 /* ギャラリー共通（共通・スマホ用レイアウト） */
 .title__gallery {
     margin-bottom: 80px;
@@ -46,64 +45,63 @@ img {
 }
 
 //拡大モーダル
-    .modal__view {
-        display: none; // 通常は非表示
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        //コンテンツ・ヘッダーの前面に設定
-        z-index: 2000;
+.modal__view {
+    display: none; // 通常は非表示
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    //コンテンツ・ヘッダーの前面に設定
+    z-index: 2000;
 
-        &.is-active {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    &.is-active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-            .modal__img {
+    .modal__img {
         width: 80%;
         height: auto;
         max-width: 1200px;
         max-height: 80vh;
         object-fit: contain;
-        }
-
-        .modal__close {
-            background: none;
-            border: none;
-            outline: none;
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            color: white;
-            font-size: 60px;
-            cursor: pointer;
-        }
-
-        .modal__btn {
-            background: none;
-            border: none;
-            outline: none;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
-            font-size: 60px;
-            cursor: pointer;
-        }
-
-        .prev {
-            left: 30px;
-        }
-
-        .next {
-            right: 30px;
-        }
     }
 
+    .modal__close {
+        background: none;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        color: white;
+        font-size: 60px;
+        cursor: pointer;
+    }
+
+    .modal__btn {
+        background: none;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 60px;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 30px;
+    }
+
+    .next {
+        right: 30px;
+    }
+}
 
 .flower__title {
     text-align: left;
@@ -168,12 +166,10 @@ img {
         gap: 60px 20px;
     }
 
-        .flower__item--last {
+    .flower__item--last {
         grid-column: 3/3;
     }
 }
-
-
 
 /* サービス共通（共通・スマホ用レイアウト） */
 

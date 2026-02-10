@@ -9,7 +9,7 @@ nav a {
 
 header a {
     text-decoration: none;
-    color: #2C2825;
+    color: #2c2825;
 }
 
 header a:hover {
@@ -19,7 +19,7 @@ header a:hover {
 // PC用ロゴタイトル
 .u-hidden-sm {
     @media screen and (max-width: 767px) {
-    display: none !important;
+        display: none !important;
     }
 }
 
@@ -27,7 +27,7 @@ header a:hover {
 .u-show-sm {
     display: none;
     @media screen and (max-width: 767px) {
-    display: inline;
+        display: inline;
     }
 }
 
@@ -53,7 +53,7 @@ header a:hover {
 @media screen and (max-width: 768px) {
     .title__logo {
         position: relative;
-        z-index: 110;       /* メニュー背景(100)より手前に出す */
+        z-index: 110; /* メニュー背景(100)より手前に出す */
     }
     /* ハンバーガーボタンを表示する */
     .p-hamburger {

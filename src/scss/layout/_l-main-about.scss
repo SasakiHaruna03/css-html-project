@@ -13,7 +13,6 @@ img {
     white-space: nowrap;
 }
 
-
 /* タイトル */
 .title__about {
     text-align: left;
@@ -85,9 +84,8 @@ img {
 
 .announce > .button {
     margin-bottom: 80px;
-    color: #2C2825;
+    color: #2c2825;
 }
-
 
 /* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
@@ -118,8 +116,8 @@ img {
 /* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
     .our-story {
-    display: grid;
-    grid-template-columns: 180px 1fr;
+        display: grid;
+        grid-template-columns: 180px 1fr;
     }
 
     .about__owner {
@@ -138,5 +136,3 @@ img {
         object-fit: cover;
     }
 }
-
-

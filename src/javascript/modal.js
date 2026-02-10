@@ -10,14 +10,14 @@ const nextBtn = document.querySelector(".modal__btn.next");
 const totalImages = images.length;
 let currentIndex = 0;
 
-function updateModal (index) {
+function updateModal(index) {
     currentIndex = index;
     modalImg.src = images[currentIndex].src;
     modalImg.alt = images[currentIndex].alt;
 }
 
 //画像をクリックしたときに表示する
-images.forEach(function(img, index){
+images.forEach(function (img, index) {
     img.addEventListener("click", () => {
         modal.classList.add("is-active");
         updateModal(index);
@@ -25,20 +25,20 @@ images.forEach(function(img, index){
 });
 
 //nextボタンを押した時に次の画像を表示する
-nextBtn.addEventListener ("click", () => {
+nextBtn.addEventListener("click", () => {
     currentIndex++;
     //最後の画像の場合、最初の画像へ移動する
-    if(currentIndex > totalImages - 1) {
+    if (currentIndex > totalImages - 1) {
         currentIndex = 0;
     }
     updateModal(currentIndex);
 });
 
 //prevボタンを押した時に前の画像を表示する
-prevBtn.addEventListener ("click", () => {
+prevBtn.addEventListener("click", () => {
     currentIndex--;
     //最初の画像の場合、最後の画像へ移動する
-    if(currentIndex < 0) {
+    if (currentIndex < 0) {
         currentIndex = totalImages - 1;
     }
     updateModal(currentIndex);
