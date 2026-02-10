@@ -1,0 +1,112 @@
+/* テキスト・フォントの設定 */
+header > .title__logo {
+    color: var(--Link-Link, #2c2825);
+
+    /* Display */
+    font-family: "Caprasimo", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92%; /* 27.6px */
+    letter-spacing: -0.9px;
+}
+
+h1 {
+    color: var(--Text-Headline, #171615);
+
+    /* Heading 1 */
+    font-family: Outfit;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 55px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--Text-Headline, #171615);
+
+    /* Heading 2 */
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 44px */
+    letter-spacing: -1px;
+}
+
+.h4 {
+    color: var(--Text-Body-2, rgba(0, 0, 0, 0.6));
+
+    /* Heading 4 */
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 21px */
+    letter-spacing: -0.375px;
+}
+
+.caption1 {
+    color: var(--Text-Caption, #575757);
+
+    /* Caption 1 */
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+}
+
+.caption2 {
+    color: var(--Text-Body-1, #2c2825);
+
+    /* Caption 2 */
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+    text-transform: uppercase;
+}
+
+.paragraph1 {
+    color: var(--Text-Body-1, #2c2825);
+    text-align: center;
+
+    /* Paragraph 1 */
+    font-family: Outfit;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: -0.425px;
+}
+
+.paragraph2 {
+    color: var(--Text-Body-1, #2c2825);
+
+    /* Paragraph 2 */
+    font-famsily: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: -0.24px;
+}
+
+.florist-body {
+    color: var(--Text-Body-1, #2c2825);
+    text-align: center;
+
+    /* Florist/Body */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.4px;
+}

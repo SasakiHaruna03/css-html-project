@@ -1,0 +1,98 @@
+nav a:hover {
+    background: grey;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: #2c2825;
+}
+
+header a:hover {
+    background-color: lightgrey;
+}
+
+// PC用ロゴタイトル
+.u-hidden-sm {
+    @media screen and (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+// スマホ用ロゴタイトル
+.u-show-sm {
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: inline;
+    }
+}
+
+/* ハンバーガーボタンはPCでは隠す */
+.p-hamburger {
+    display: none;
+}
+
+/* ナビゲーションを横並びにする */
+.nav__list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav__list ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .title__logo {
+        position: relative;
+        z-index: 110; /* メニュー背景(100)より手前に出す */
+    }
+    /* ハンバーガーボタンを表示する */
+    .p-hamburger {
+        display: block;
+        position: relative;
+        z-index: 110;
+        background-color: #fff;
+        border: none;
+    }
+
+    /* ナビゲーションを画面全体を覆うメニューに作り変える */
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        padding: 20px 16px;
+        z-index: 100;
+
+        /* 初期状態は隠しておく */
+        display: none;
+    }
+
+    /* JSで .is-active がついた時だけ表示 */
+    .nav__list.is-active {
+        display: block;
+    }
+
+    /* メニュー項目を縦並びにする */
+    .nav__list ul {
+        flex-direction: column;
+        margin-top: 81px;
+        gap: 0;
+        text-align: left;
+    }
+
+    .nav__list ul li {
+        margin-bottom: 24px;
+    }
+}

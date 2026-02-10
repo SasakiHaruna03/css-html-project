@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Our Bloom</title>
+        <link rel="stylesheet" href="../css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="../javascript/navigation.js" type="module"></script>
+        <script src="../javascript/modal.js" type="module"></script>
+        <script src="../javascript/scroll.js" type="module"></script>
+    </head>
+    <body>
+        <header class="l-header">
+            <div class="title__logo">
+                <a href="home.html" class="u-hidden-sm">Our Blooms®️</a>
+                <a href="home.html" class="u-show-sm">O.B.</a>
+            </div>
+            <button class="p-hamburger js-hamburger" aria-label="メニューを開く">
+                <img src="../media/images/common/hamburger-Icons-close.svg" />
+            </button>
+            <nav class="nav__list js-nav">
+                <ul>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="title__gallery reveal__item">GALLERY</h1>
+            <div class="flower__list">
+                <p class="content__title caption1 reveal__item">SEASONAL ARRANGEMENTS</p>
+                <div class="list__item">
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Dawn Bloom</span>&nbsp;
+                            <span class="h4">$55/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower1.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Solstice Stems</span>&nbsp;
+                            <span class="h4">$30/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower2.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Whisper Greens</span>&nbsp;
+                            <span class="h4">$120/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower3.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Clarity Petals</span>&nbsp;
+                            <span class="h4">$55/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower4.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">River Stone</span>&nbsp;
+                            <span class="h4">$30/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower5.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Moonlit Meadow</span>&nbsp;
+                            <span class="h4">$120/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower6.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Ember Leaf</span>&nbsp;
+                            <span class="h4">$55/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower7.png" />
+                    </div>
+                    <div class="flower__item reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Skyline Bloom</span>&nbsp;
+                            <span class="h4">$75/Bunch</span>
+                        </p>
+                        <img class="flower__img" src="../media/images/gallery/Image_flower8.png" />
+                    </div>
+                    <div class="flower__item flower__item--last reveal__item">
+                        <p class="flower__title">
+                            <span class="caption2">Still Waters</span>&nbsp;
+                            <span class="h4">$250/Bunch</span>
+                        </p>
+                        <picture>
+                            <source
+                                media="(min-width: 768px) and (max-width: 1024px)"
+                                srcset="../media/images/gallery/Image_flower9-2.png"
+                            />
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="../media/images/gallery/Image_flower9.png"
+                            />
+                            <img
+                                class="flower__img"
+                                src="../media/images/gallery/Image_flower9.png"
+                            />
+                        </picture>
+                    </div>
+                </div>
+                <div class="modal__view">
+                    <button class="modal__close">&times;</button>
+                    <img class="modal__img" />
+                    <button class="modal__btn prev">&lt;</button>
+                    <button class="modal__btn next">&gt;</button>
+                </div>
+            </div>
+            <div class="content__services">
+                <p class="content__title caption1 reveal__item">Services</p>
+                <div class="services__list">
+                    <hr />
+                    <div class="services__item reveal__item">
+                        <div class="services__text">
+                            <h1 class="services__title">FLORAL INSTALLATIONS</h1>
+                            <p class="services__desc">
+                                We create clean, contemporary designs that elevate any environment,
+                                from intimate gatherings to grand events.
+                            </p>
+                        </div>
+                        <picture class="picture reveal__item">
+                            <source
+                                media="(min-width: 768px) and (max-width: 1024px)"
+                                srcset="../media/images/gallery/Image_services1-2.png"
+                            />
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="../media/images/gallery/Image_services1-3.png"
+                            />
+                            <img
+                                class="services__img"
+                                src="../media/images/gallery/Image_services1-1.png"
+                            />
+                        </picture>
+                    </div>
+                    <hr />
+                    <div class="services__item reveal__item">
+                        <div class="services__text">
+                            <h1 class="services__title">NATIVE PLANT ARRANGEMENTS</h1>
+                            <p class="services__desc">
+                                Our selection of locally sourced flora brings natural resilience and
+                                effortless elegance to your home.
+                            </p>
+                        </div>
+                        <picture class="picture reveal__item">
+                            <source
+                                media="(min-width: 768px) and (max-width: 1024px)"
+                                srcset="../media/images/gallery/Image_services2-2.png"
+                            />
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="../media/images/gallery/Image_services2-3.png"
+                            />
+                            <img
+                                class="services__img"
+                                src="../media/images/gallery/Image_services2-1.png"
+                            />
+                        </picture>
+                    </div>
+                    <hr />
+                    <div class="services__item reveal__item">
+                        <div class="services__text">
+                            <h1 class="services__title">CUSTOM FLORAL CONCEPTS</h1>
+                            <p class="services__desc">
+                                Your vision, our blooms. We build arrangements that are both
+                                personal and exquisitely simple.
+                            </p>
+                        </div>
+                        <picture class="picture reveal__item">
+                            <source
+                                media="(min-width: 768px) and (max-width: 1024px)"
+                                srcset="../media/images/gallery/Image_services3-2.png"
+                            />
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="../media/images/gallery/Image_services3-3.png"
+                            />
+                            <img
+                                class="services__img"
+                                src="../media/images/gallery/Image_services3-1.png"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <section class="content__bottom__gallery reveal__item">
+                <p class="content__catch caption1">WORK WITH US</p>
+                <h2 class="content__desc">
+                    Discover how we can add a touch of natural beauty to your next event.
+                </h2>
+                <a href="about.html" class="button">・ABOUT US</a>
+            </section>
+        </main>
+        <footer>
+            <picture class="picture reveal__item">
+                <source
+                    media="(min-width: 768px) and (max-width: 1024px)"
+                    srcset="../media/images/common/Image-footer-2.png"
+                />
+                <source
+                    media="(max-width: 767px)"
+                    srcset="../media/images/common/Image-footer-3.png"
+                />
+                <img class="footer-img" src="../media/images/common/Image-footer-1.png" />
+            </picture>
+        </footer>
+    </body>
+</html>

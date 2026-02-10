@@ -1,0 +1,138 @@
+/* 画像共通 */
+img {
+    max-width: 100%;
+}
+
+/* ボタン共通 */
+.button {
+    display: inline-flex;
+    padding: 8px 12px 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+/* タイトル */
+.title__about {
+    text-align: left;
+    margin-top: 44px;
+    margin-bottom: 80px;
+}
+
+/* 内容（共通・スマホ用レイアウト） */
+.our-story {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+.about__title {
+    margin-bottom: 50px;
+}
+
+.about__owner {
+    display: flex;
+    flex-direction: column;
+}
+
+.owner__text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.story__title {
+    margin: 70px 0;
+}
+
+.story__img {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story__img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story__text {
+    margin: 70px 0;
+    display: block;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+    max-width: 600px;
+    align-self: stretch;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.announce__text {
+    margin: 70px 0;
+    display: block;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+    max-width: 600px;
+    align-self: stretch;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.announce > .button {
+    margin-bottom: 80px;
+    color: #2c2825;
+}
+
+/* タブレット用にレイアウトを変更 */
+@media screen and (min-width: 768px) {
+    .our-story {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .about__owner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .story__img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .story__img img {
+        flex: 1;
+        min-width: 0;
+        object-fit: cover;
+    }
+}
+
+/* PC用にレイアウトを変更 */
+@media screen and (min-width: 1024px) {
+    .our-story {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+    }
+
+    .about__owner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .story__img {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .story__img img {
+        flex: 1;
+        min-width: 0;
+        object-fit: cover;
+    }
+}
